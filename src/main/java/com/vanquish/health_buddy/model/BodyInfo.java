@@ -4,9 +4,9 @@ import javax.persistence.*;
 
 @Entity(name = "body_info")
 public class BodyInfo {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer info_id;
+    private Integer userId;
 
     @Column(nullable = false)
     private Double bodyMassIndex;
@@ -35,12 +35,13 @@ public class BodyInfo {
 
     //Getters and Setters
 
-    public Integer getInfo_id() {
-        return info_id;
+
+    public Integer getUserId() {
+        return userId;
     }
 
-    public BodyInfo setInfo_id(Integer info_id) {
-        this.info_id = info_id;
+    public BodyInfo setUserId(Integer userId) {
+        this.userId = userId;
         return this;
     }
 

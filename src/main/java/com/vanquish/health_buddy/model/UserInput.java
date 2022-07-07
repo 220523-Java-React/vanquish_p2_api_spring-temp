@@ -2,12 +2,11 @@ package com.vanquish.health_buddy.model;
 
 import javax.persistence.*;
 
-@Entity(name = "user_inputs")
+@Entity(name = "user_input")
 public class UserInput {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer inputId;
+    private Integer user_id;
 
     @Column(nullable = false)
     private Integer age;
@@ -40,14 +39,9 @@ public class UserInput {
     @Column(nullable = false)
     private WeightGoal weightGoal;
 
-    public Integer getInputId() {
-        return inputId;
-    }
+    //getters and setters
 
-    public UserInput setInputId(Integer inputId) {
-        this.inputId = inputId;
-        return this;
-    }
+
 
     public Integer getAge() {
         return age;
