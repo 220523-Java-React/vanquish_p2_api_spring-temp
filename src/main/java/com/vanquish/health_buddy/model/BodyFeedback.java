@@ -13,19 +13,19 @@ public class BodyFeedback {
 
     @Enumerated
     @Column(nullable = false)
-    private BmiRead bmiRead;
+    private BodyMassIndex bodyMassIndex;
 
     @Enumerated
     @Column(nullable = false)
-    private BodyFatPercentageRead bodyFatPercentageRead;
+    private BodyFatPercentage bodyFatPercentage;
 
     @Enumerated
     @Column(nullable = false)
-    private WaistToHeightRead waistToHeightRead;
+    private WaistToHeight waistToHeight;
 
     @Enumerated
     @Column(nullable = false)
-    private WaistToHipRead waistToHipRead;
+    private WaistToHip waistToHip;
 
     //getters and setters
 
@@ -38,39 +38,39 @@ public class BodyFeedback {
         return this;
     }
 
-    public BmiRead getBmiRead() {
-        return bmiRead;
+    public BodyMassIndex getBodyMassIndex() {
+        return bodyMassIndex;
     }
 
-    public BodyFeedback setBmiRead(BmiRead bmiRead) {
-        this.bmiRead = bmiRead;
+    public BodyFeedback setBodyMassIndex(BodyMassIndex bodyMassIndex) {
+        this.bodyMassIndex = bodyMassIndex;
         return this;
     }
 
-    public BodyFatPercentageRead getBodyFatPercentageRead() {
-        return bodyFatPercentageRead;
+    public BodyFatPercentage getBodyFatPercentage() {
+        return bodyFatPercentage;
     }
 
-    public BodyFeedback setBodyFatPercentageRead(BodyFatPercentageRead bodyFatPercentageRead) {
-        this.bodyFatPercentageRead = bodyFatPercentageRead;
+    public BodyFeedback setBodyFatPercentage(BodyFatPercentage bodyFatPercentage) {
+        this.bodyFatPercentage = bodyFatPercentage;
         return this;
     }
 
-    public WaistToHeightRead getWaistToHeightRead() {
-        return waistToHeightRead;
+    public WaistToHeight getWaistToHeight() {
+        return waistToHeight;
     }
 
-    public BodyFeedback setWaistToHeightRead(WaistToHeightRead waistToHeightRead) {
-        this.waistToHeightRead = waistToHeightRead;
+    public BodyFeedback setWaistToHeight(WaistToHeight waistToHeight) {
+        this.waistToHeight = waistToHeight;
         return this;
     }
 
-    public WaistToHipRead getWaistToHipRead() {
-        return waistToHipRead;
+    public WaistToHip getWaistToHip() {
+        return waistToHip;
     }
 
-    public BodyFeedback setWaistToHipRead(WaistToHipRead waistToHipRead) {
-        this.waistToHipRead = waistToHipRead;
+    public BodyFeedback setWaistToHip(WaistToHip waistToHip) {
+        this.waistToHip = waistToHip;
         return this;
     }
 }
