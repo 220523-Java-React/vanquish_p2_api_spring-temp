@@ -7,35 +7,35 @@ public class Mineral {
     private Integer mineralId;
     //@manytoOne here for User soon
     @Column(nullable = false)
-    private Double Choline;
+    private Double choline;
     @Column(nullable = false)
-    private Double Magnesium;
+    private Double magnesium;
     @Column(nullable = false)
-    private Double Calcium;
+    private Double calcium;
     @Column(nullable = false)
-    private Double Zinc;
+    private Double zinc;
     @Column(nullable = false)
-    private Double Iron;
+    private Double iron;
     @Column(nullable = false)
     private Double copper;
     @Column(nullable = false)
-    private Double Selenium;
+    private Double selenium;
     @Column(nullable = false)
-    private Double Manganese;
+    private Double manganese;
     @Column(nullable = false)
-    private Double Phosphorus;
+    private Double phosphorus;
     @Column(nullable = false)
-    private Double Potassium;
+    private Double potassium;
     @Column(nullable = false)
-    private Double Iodine;
+    private Double iodine;
     @Column(nullable = false)
-    private Double Chromium;
+    private Double chromium;
     @Column(nullable = false)
-    private Double Flouride;
+    private Double flouride;
     @Column(nullable = false)
-    private Double Sodium;
+    private Double sodium;
     @Column(nullable = false)
-    private Double Chloride;
+    private Double chloride;
 
     public Integer getMineralId() {
         return mineralId;
@@ -44,34 +44,34 @@ public class Mineral {
         this.mineralId = mineralId;
     }
     public Double getCholine() {
-        return Choline;
+        return choline;
     }
     public void setCholine(Double choline) {
-        Choline = choline;
+        this.choline = choline;
     }
     public Double getMagnesium() {
-        return Magnesium;
+        return magnesium;
     }
     public void setMagnesium(Double magnesium) {
-        Magnesium = magnesium;
+        this.magnesium = magnesium;
     }
     public Double getCalcium() {
-        return Calcium;
+        return calcium;
     }
     public void setCalcium(Double calcium) {
-        Calcium = calcium;
+        this.calcium = calcium;
     }
     public Double getZinc() {
-        return Zinc;
+        return zinc;
     }
     public void setZinc(Double zinc) {
-        Zinc = zinc;
+        this.zinc = zinc;
     }
     public Double getIron() {
-        return Iron;
+        return iron;
     }
     public void setIron(Double iron) {
-        Iron = iron;
+        this.iron = iron;
     }
     public Double getCopper() {
         return copper;
@@ -80,57 +80,57 @@ public class Mineral {
         this.copper = copper;
     }
     public Double getSelenium() {
-        return Selenium;
+        return selenium;
     }
     public void setSelenium(Double selenium) {
-        Selenium = selenium;
+        this.selenium = selenium;
     }
     public Double getManganese() {
-        return Manganese;
+        return manganese;
     }
     public void setManganese(Double manganese) {
-        Manganese = manganese;
+        this.manganese = manganese;
     }
     public Double getPhosphorus() {
-        return Phosphorus;
+        return phosphorus;
     }
     public void setPhosphorus(Double phosphorus) {
-        Phosphorus = phosphorus;
+        this.phosphorus = phosphorus;
     }
     public Double getPotassium() {
-        return Potassium;
+        return potassium;
     }
     public void setPotassium(Double potassium) {
-        Potassium = potassium;
+        this.potassium = potassium;
     }
     public Double getIodine() {
-        return Iodine;
+        return iodine;
     }
     public void setIodine(Double iodine) {
-        Iodine = iodine;
+        this.iodine = iodine;
     }
     public Double getChromium() {
-        return Chromium;
+        return chromium;
     }
     public void setChromium(Double chromium) {
-        Chromium = chromium;
+        this.chromium = chromium;
     }
     public Double getFlouride() {
-        return Flouride;
+        return flouride;
     }
     public void setFlouride(Double flouride) {
-        Flouride = flouride;
+        this.flouride = flouride;
     }
     public Double getSodium() {
-        return Sodium;
+        return sodium;
     }
     public void setSodium(Double sodium) {
-        Sodium = sodium;
+        this.sodium = sodium;
     }
     public Double getChloride() {
-        return Chloride;
+        return chloride;
     }
     public void setChloride(Double chloride) {
-        Chloride = chloride;
+        this.chloride = chloride;
     }
 }
