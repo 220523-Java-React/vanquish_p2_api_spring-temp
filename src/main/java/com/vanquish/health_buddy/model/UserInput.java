@@ -2,7 +2,7 @@ package com.vanquish.health_buddy.model;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "user_inputs")
 public class UserInput {
 
     @Id
