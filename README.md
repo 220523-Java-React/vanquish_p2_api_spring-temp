@@ -19,8 +19,8 @@
     any health recommendations
 
 ## Tech Stack
-- Spring Boot
-- Postgresql
+- Spring 5
+- Postgresql RDBMS
 - Java 8
 - J-Unit 5
 - React
