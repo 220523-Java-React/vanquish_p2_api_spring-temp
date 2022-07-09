@@ -9,6 +9,8 @@ public class Progress {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer progressId;
 
+    @Column(nullable = false)
+    private Integer userId;
 
     @Column(nullable = false)
     private Integer age;
@@ -47,6 +49,15 @@ public class Progress {
 
     public Progress setProgressId(Integer progressId) {
         this.progressId = progressId;
+        return this;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public Progress setUserId(Integer userId) {
+        this.userId = userId;
         return this;
     }
 

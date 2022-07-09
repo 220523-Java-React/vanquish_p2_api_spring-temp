@@ -4,7 +4,11 @@ import javax.persistence.*;
 public class Mineral {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer mineralId;
+    private Integer mineralslId;
+
+    @Column(nullable = false)
+    private Integer userId;
+
     //@manytoOne here for User soon
     @Column(nullable = false)
     private Double choline;
@@ -37,12 +41,21 @@ public class Mineral {
     @Column(nullable = false)
     private Double chloride;
 
-    public Integer getMineralId() {
-        return mineralId;
+    public Integer getMineralslId() {
+        return mineralslId;
     }
 
-    public Mineral setMineralId(Integer mineralId) {
-        this.mineralId = mineralId;
+    public Mineral setMineralslId(Integer mineralslId) {
+        this.mineralslId = mineralslId;
+        return this;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public Mineral setUserId(Integer userId) {
+        this.userId = userId;
         return this;
     }
 

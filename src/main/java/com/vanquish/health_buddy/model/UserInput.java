@@ -6,7 +6,11 @@ import javax.persistence.*;
 public class UserInput {
 
     @Id
-    private Integer user_id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer userInputId;
+
+    @Column(nullable = false)
+    private Integer userId;
 
     @Column(nullable = false)
     private Integer age;
@@ -21,7 +25,6 @@ public class UserInput {
     private Double neck;
     @Column(nullable = false)
     private Double hip;
-
 
     @Enumerated
     @Column(nullable = false)
@@ -42,6 +45,23 @@ public class UserInput {
     //getters and setters
 
 
+    public Integer getUserInputId() {
+        return userInputId;
+    }
+
+    public UserInput setUserInputId(Integer userInputId) {
+        this.userInputId = userInputId;
+        return this;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public UserInput setUserId(Integer userId) {
+        this.userId = userId;
+        return this;
+    }
 
     public Integer getAge() {
         return age;

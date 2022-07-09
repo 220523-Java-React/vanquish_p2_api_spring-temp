@@ -1,13 +1,15 @@
 package com.vanquish.health_buddy.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity(name = "vitamins")
 public class Vitamin {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer vitaminsId;
+
+    @Column(nullable = false)
     private Integer userId;
 
     @Column(nullable = false)
@@ -50,6 +52,16 @@ public class Vitamin {
     private Double vitaminB12;
 
     //getters and setters
+
+
+    public Integer getVitaminsId() {
+        return vitaminsId;
+    }
+
+    public Vitamin setVitaminsId(Integer vitaminsId) {
+        this.vitaminsId = vitaminsId;
+        return this;
+    }
 
     public Integer getUserId() {
         return userId;

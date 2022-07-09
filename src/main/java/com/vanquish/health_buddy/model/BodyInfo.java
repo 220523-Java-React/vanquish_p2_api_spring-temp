@@ -6,6 +6,10 @@ import javax.persistence.*;
 public class BodyInfo {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer bodyInfoId;
+
+    @Column(nullable = false)
     private Integer userId;
 
     @Column(nullable = false)
@@ -35,6 +39,15 @@ public class BodyInfo {
 
     //Getters and Setters
 
+
+    public Integer getBodyInfoId() {
+        return bodyInfoId;
+    }
+
+    public BodyInfo setBodyInfoId(Integer bodyInfoId) {
+        this.bodyInfoId = bodyInfoId;
+        return this;
+    }
 
     public Integer getUserId() {
         return userId;
@@ -85,17 +98,17 @@ public class BodyInfo {
         return waistToHeightRatio;
     }
 
+    public BodyInfo setWaistToHeightRatio(Double waistToHeightRatio) {
+        this.waistToHeightRatio = waistToHeightRatio;
+        return this;
+    }
+
     public Double getWaistToHipRatio() {
         return waistToHipRatio;
     }
 
     public BodyInfo setWaistToHipRatio(Double waistToHipRatio) {
         this.waistToHipRatio = waistToHipRatio;
-        return this;
-    }
-
-    public BodyInfo setWaistToHeightRatio(Double waistToHeightRatio) {
-        this.waistToHeightRatio = waistToHeightRatio;
         return this;
     }
 

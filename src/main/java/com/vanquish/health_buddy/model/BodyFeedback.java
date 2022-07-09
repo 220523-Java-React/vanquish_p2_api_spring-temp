@@ -1,14 +1,15 @@
 package com.vanquish.health_buddy.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class BodyFeedback {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer bodyFeedbackId;
+
+    @Column(nullable = false)
     private Integer userId;
 
     @Enumerated
@@ -28,6 +29,16 @@ public class BodyFeedback {
     private WaistToHip waistToHip;
 
     //getters and setters
+
+
+    public Integer getBodyFeedbackId() {
+        return bodyFeedbackId;
+    }
+
+    public BodyFeedback setBodyFeedbackId(Integer bodyFeedbackId) {
+        this.bodyFeedbackId = bodyFeedbackId;
+        return this;
+    }
 
     public Integer getUserId() {
         return userId;
