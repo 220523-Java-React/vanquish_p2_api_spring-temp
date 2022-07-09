@@ -1,13 +1,13 @@
-package com.vanquish.health_buddy.model;
+package com.vanquish.health_buddy.model.userInput;
 
 import javax.persistence.*;
 
-@Entity(name = "progress")
-public class Progress {
+@Entity(name = "user_input")
+public class UserInput {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer progressId;
+    private Integer userInputId;
 
     @Column(nullable = false)
     private Integer userId;
@@ -26,7 +26,6 @@ public class Progress {
     @Column(nullable = false)
     private Double hip;
 
-
     @Enumerated
     @Column(nullable = false)
     private UnitOfMeasurement unitOfMeasurement;
@@ -43,12 +42,15 @@ public class Progress {
     @Column(nullable = false)
     private WeightGoal weightGoal;
 
-    public Integer getProgressId() {
-        return progressId;
+    //getters and setters
+
+
+    public Integer getUserInputId() {
+        return userInputId;
     }
 
-    public Progress setProgressId(Integer progressId) {
-        this.progressId = progressId;
+    public UserInput setUserInputId(Integer userInputId) {
+        this.userInputId = userInputId;
         return this;
     }
 
@@ -56,7 +58,7 @@ public class Progress {
         return userId;
     }
 
-    public Progress setUserId(Integer userId) {
+    public UserInput setUserId(Integer userId) {
         this.userId = userId;
         return this;
     }
@@ -65,7 +67,7 @@ public class Progress {
         return age;
     }
 
-    public Progress setAge(Integer age) {
+    public UserInput setAge(Integer age) {
         this.age = age;
         return this;
     }
@@ -74,7 +76,7 @@ public class Progress {
         return height;
     }
 
-    public Progress setHeight(Double height) {
+    public UserInput setHeight(Double height) {
         this.height = height;
         return this;
     }
@@ -83,7 +85,7 @@ public class Progress {
         return weight;
     }
 
-    public Progress setWeight(Double weight) {
+    public UserInput setWeight(Double weight) {
         this.weight = weight;
         return this;
     }
@@ -92,7 +94,7 @@ public class Progress {
         return waist;
     }
 
-    public Progress setWaist(Double waist) {
+    public UserInput setWaist(Double waist) {
         this.waist = waist;
         return this;
     }
@@ -101,7 +103,7 @@ public class Progress {
         return neck;
     }
 
-    public Progress setNeck(Double neck) {
+    public UserInput setNeck(Double neck) {
         this.neck = neck;
         return this;
     }
@@ -110,7 +112,7 @@ public class Progress {
         return hip;
     }
 
-    public Progress setHip(Double hip) {
+    public UserInput setHip(Double hip) {
         this.hip = hip;
         return this;
     }
@@ -119,7 +121,7 @@ public class Progress {
         return unitOfMeasurement;
     }
 
-    public Progress setUnitOfMeasurement(UnitOfMeasurement unitOfMeasurement) {
+    public UserInput setUnitOfMeasurement(UnitOfMeasurement unitOfMeasurement) {
         this.unitOfMeasurement = unitOfMeasurement;
         return this;
     }
@@ -128,7 +130,7 @@ public class Progress {
         return gender;
     }
 
-    public Progress setGender(Gender gender) {
+    public UserInput setGender(Gender gender) {
         this.gender = gender;
         return this;
     }
@@ -137,7 +139,7 @@ public class Progress {
         return activityLevel;
     }
 
-    public Progress setActivityLevel(ActivityLevel activityLevel) {
+    public UserInput setActivityLevel(ActivityLevel activityLevel) {
         this.activityLevel = activityLevel;
         return this;
     }
@@ -146,7 +148,7 @@ public class Progress {
         return weightGoal;
     }
 
-    public Progress setWeightGoal(WeightGoal weightGoal) {
+    public UserInput setWeightGoal(WeightGoal weightGoal) {
         this.weightGoal = weightGoal;
         return this;
     }

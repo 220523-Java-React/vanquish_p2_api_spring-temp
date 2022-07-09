@@ -1,4 +1,4 @@
-package com.vanquish.health_buddy.model;
+package com.vanquish.health_buddy.model.bodyFeedback;
 
 public enum WaistToHeight {
     HIGHLY_OBESE,

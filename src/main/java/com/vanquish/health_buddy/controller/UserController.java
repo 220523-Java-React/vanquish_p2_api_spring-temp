@@ -1,6 +1,6 @@
 package com.vanquish.health_buddy.controller;
 
-import com.vanquish.health_buddy.model.User;
+import com.vanquish.health_buddy.model.user.User;
 import com.vanquish.health_buddy.service.UserService;
 import org.springframework.web.bind.annotation.*;
 

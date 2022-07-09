@@ -1,6 +1,6 @@
 package com.vanquish.health_buddy.service;
 
-import com.vanquish.health_buddy.model.Mineral;
+import com.vanquish.health_buddy.model.mineral.Mineral;
 import com.vanquish.health_buddy.repository.MineralRepository;
 import org.springframework.stereotype.Service;
 

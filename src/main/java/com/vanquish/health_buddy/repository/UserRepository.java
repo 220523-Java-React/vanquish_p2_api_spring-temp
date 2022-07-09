@@ -1,6 +1,6 @@
 package com.vanquish.health_buddy.repository;
 
-import com.vanquish.health_buddy.model.User;
+import com.vanquish.health_buddy.model.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

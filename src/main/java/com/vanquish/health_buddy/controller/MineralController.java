@@ -1,8 +1,7 @@
 package com.vanquish.health_buddy.controller;
 
-import com.vanquish.health_buddy.model.Mineral;
+import com.vanquish.health_buddy.model.mineral.Mineral;
 import com.vanquish.health_buddy.service.MineralService;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

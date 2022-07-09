@@ -1,4 +1,4 @@
-package com.vanquish.health_buddy.model;
+package com.vanquish.health_buddy.model.mineral;
 import javax.persistence.*;
 @Entity(name = "minerals")
 public class Mineral {

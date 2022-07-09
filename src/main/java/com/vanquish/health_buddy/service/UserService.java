@@ -1,7 +1,7 @@
 package com.vanquish.health_buddy.service;
 
 import com.vanquish.health_buddy.exception.UserNotFoundException;
-import com.vanquish.health_buddy.model.User;
+import com.vanquish.health_buddy.model.user.User;
 import com.vanquish.health_buddy.repository.UserRepository;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.vanquish.health_buddy.model;
+package com.vanquish.health_buddy.model.userInput;
 
 public enum ActivityLevel {
     SEDENTARY,
