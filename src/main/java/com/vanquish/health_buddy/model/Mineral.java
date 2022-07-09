@@ -40,97 +40,144 @@ public class Mineral {
     public Integer getMineralId() {
         return mineralId;
     }
-    public void setMineralId(Integer mineralId) {
+
+    public Mineral setMineralId(Integer mineralId) {
         this.mineralId = mineralId;
+        return this;
     }
+
     public Double getCholine() {
         return choline;
     }
-    public void setCholine(Double choline) {
+
+    public Mineral setCholine(Double choline) {
         this.choline = choline;
+        return this;
     }
+
     public Double getMagnesium() {
         return magnesium;
     }
-    public void setMagnesium(Double magnesium) {
+
+    public Mineral setMagnesium(Double magnesium) {
         this.magnesium = magnesium;
+        return this;
     }
+
     public Double getCalcium() {
         return calcium;
     }
-    public void setCalcium(Double calcium) {
+
+    public Mineral setCalcium(Double calcium) {
         this.calcium = calcium;
+        return this;
     }
+
     public Double getZinc() {
         return zinc;
     }
-    public void setZinc(Double zinc) {
+
+    public Mineral setZinc(Double zinc) {
         this.zinc = zinc;
+        return this;
     }
+
     public Double getIron() {
         return iron;
     }
-    public void setIron(Double iron) {
+
+    public Mineral setIron(Double iron) {
         this.iron = iron;
+        return this;
     }
+
     public Double getCopper() {
         return copper;
     }
-    public void setCopper(Double copper) {
+
+    public Mineral setCopper(Double copper) {
         this.copper = copper;
+        return this;
     }
+
     public Double getSelenium() {
         return selenium;
     }
-    public void setSelenium(Double selenium) {
+
+    public Mineral setSelenium(Double selenium) {
         this.selenium = selenium;
+        return this;
     }
+
     public Double getManganese() {
         return manganese;
     }
-    public void setManganese(Double manganese) {
+
+    public Mineral setManganese(Double manganese) {
         this.manganese = manganese;
+        return this;
     }
+
     public Double getPhosphorus() {
         return phosphorus;
     }
-    public void setPhosphorus(Double phosphorus) {
+
+    public Mineral setPhosphorus(Double phosphorus) {
         this.phosphorus = phosphorus;
+        return this;
     }
+
     public Double getPotassium() {
         return potassium;
     }
-    public void setPotassium(Double potassium) {
+
+    public Mineral setPotassium(Double potassium) {
         this.potassium = potassium;
+        return this;
     }
+
     public Double getIodine() {
         return iodine;
     }
-    public void setIodine(Double iodine) {
+
+    public Mineral setIodine(Double iodine) {
         this.iodine = iodine;
+        return this;
     }
+
     public Double getChromium() {
         return chromium;
     }
-    public void setChromium(Double chromium) {
+
+    public Mineral setChromium(Double chromium) {
         this.chromium = chromium;
+        return this;
     }
+
     public Double getFlouride() {
         return flouride;
     }
-    public void setFlouride(Double flouride) {
+
+    public Mineral setFlouride(Double flouride) {
         this.flouride = flouride;
+        return this;
     }
+
     public Double getSodium() {
         return sodium;
     }
-    public void setSodium(Double sodium) {
+
+    public Mineral setSodium(Double sodium) {
         this.sodium = sodium;
+        return this;
     }
+
     public Double getChloride() {
         return chloride;
     }
-    public void setChloride(Double chloride) {
+
+    public Mineral setChloride(Double chloride) {
         this.chloride = chloride;
+        return this;
     }
 }

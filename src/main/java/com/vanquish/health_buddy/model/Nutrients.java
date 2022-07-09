@@ -29,47 +29,53 @@ public class Nutrients {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public Nutrients setUserId(Integer userId) {
         this.userId = userId;
+        return this;
     }
 
     public Integer getProtein() {
         return protein;
     }
 
-    public void setProtein(Integer protein) {
+    public Nutrients setProtein(Integer protein) {
         this.protein = protein;
+        return this;
     }
 
     public Integer getCalories() {
         return calories;
     }
 
-    public void setCalories(Integer calories) {
+    public Nutrients setCalories(Integer calories) {
         this.calories = calories;
+        return this;
     }
 
     public Integer getFat() {
         return fat;
     }
 
-    public void setFat(Integer fat) {
+    public Nutrients setFat(Integer fat) {
         this.fat = fat;
+        return this;
     }
 
     public Integer getWater() {
         return water;
     }
 
-    public void setWater(Integer water) {
+    public Nutrients setWater(Integer water) {
         this.water = water;
+        return this;
     }
 
     public Integer getCarbs() {
         return carbs;
     }
 
-    public void setCarbs(Integer carbs) {
+    public Nutrients setCarbs(Integer carbs) {
         this.carbs = carbs;
+        return this;
     }
 }
