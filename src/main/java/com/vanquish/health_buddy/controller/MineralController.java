@@ -20,4 +20,5 @@ public class MineralController {
     @PostMapping
     public Mineral createMineral(@RequestBody Mineral mineral) { return mineralService.createMineral(mineral);}
 
+
 }
