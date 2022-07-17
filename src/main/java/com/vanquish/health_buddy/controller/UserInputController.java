@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/userinputs")
+@RequestMapping("/userinput")
 public class UserInputController {
     private final UserInputService userInputService;
 
