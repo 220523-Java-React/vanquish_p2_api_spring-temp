@@ -2,7 +2,7 @@ package com.vanquish.health_buddy.model.bodyInfo;
 
 import javax.persistence.*;
 
-@Entity(name = "body_info")
+@Entity(name = "bodyinfo")
 public class BodyInfo {
 
     @Id
