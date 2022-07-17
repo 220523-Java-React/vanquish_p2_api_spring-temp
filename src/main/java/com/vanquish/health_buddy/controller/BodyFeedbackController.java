@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/bodyfeedbacks")
+@RequestMapping("/bodyfeedback")
 public class BodyFeedbackController {
 
     private final BodyFeedbackService bodyFeedbackService;
