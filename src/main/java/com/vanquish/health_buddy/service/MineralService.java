@@ -19,5 +19,4 @@ public class MineralService {
 
     public List<Mineral> getAllMinerals(){return mineralRepository.findAll();}
 
-
 }
