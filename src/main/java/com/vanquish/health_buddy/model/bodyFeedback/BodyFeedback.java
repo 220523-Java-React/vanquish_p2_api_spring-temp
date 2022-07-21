@@ -2,7 +2,7 @@ package com.vanquish.health_buddy.model.bodyFeedback;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "bodyfeedback")
 public class BodyFeedback {
 
     @Id

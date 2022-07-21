@@ -4,7 +4,10 @@ import javax.persistence.*;
 public class Mineral {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer mineralId;
+    @Column(nullable = true)
+    private Integer mineralslId;
+
+
 
     @Column(nullable = false)
     private Integer userId;
@@ -41,12 +44,14 @@ public class Mineral {
     @Column(nullable = false)
     private Double chloride;
 
+
+
     public Integer getMineralslId() {
-        return mineralId;
+        return mineralslId;
     }
 
     public Mineral setMineralslId(Integer mineralslId) {
-        this.mineralId = mineralslId;
+        this.mineralslId = mineralslId;
         return this;
     }
 
