@@ -1,4 +1,5 @@
 package com.vanquish.health_buddy.model.mineral;
+
 import javax.persistence.*;
 @Entity(name = "minerals")
 public class Mineral {
@@ -6,6 +7,7 @@ public class Mineral {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = true)
     private Integer mineralslId;
+
 
 
 
