@@ -20,4 +20,9 @@ public class BodyFeedbackService {
     public List<BodyFeedback> getAllBodyFeedback(){return bodyFeedbackRepository.findAll();}
 
 
+    public BodyFeedback getBodyFeedbackById(Integer bodyFeedbackId){
+        return bodyFeedbackRepository.findById(bodyFeedbackId).orElseThrow(()-> new RuntimeException());
+    }
+
+
 }

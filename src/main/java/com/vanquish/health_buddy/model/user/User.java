@@ -21,6 +21,7 @@ public class User {
     @Column(unique = true, nullable = false)
     private String email;
 
+
     public Integer getUserId() {
         return userId;
     }
@@ -74,4 +75,6 @@ public class User {
         this.email = email;
         return this;
     }
+
+
 }

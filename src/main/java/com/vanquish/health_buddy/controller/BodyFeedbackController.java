@@ -20,6 +20,11 @@ public class BodyFeedbackController {
     @PostMapping
     public BodyFeedback createBodyFeedback(@RequestBody BodyFeedback bodyFeedback) { return bodyFeedbackService.createBodyFeedback(bodyFeedback);}
 
+    @GetMapping("/{bodyFeedbackId}")
+    public BodyFeedback getBodyFeedbackById (@PathVariable Integer bodyFeedbackId){
+        return bodyFeedbackService.getBodyFeedbackById(bodyFeedbackId);
+    }
+
 
 }
 
