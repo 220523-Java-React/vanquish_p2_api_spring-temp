@@ -1,10 +1,12 @@
 package com.vanquish.health_buddy.model.mineral;
+
 import javax.persistence.*;
 @Entity(name = "minerals")
 public class Mineral {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer mineralId;
+
 
     @Column(nullable = false)
     private Integer userId;
